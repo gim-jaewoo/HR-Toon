@@ -1,21 +1,157 @@
-#header {
-  height: 100px;
-  background-color: yellow;
-  color: blueviolet;
+/* 전체설정 */
+
+* {
   margin: 0;
   padding: 0;
 }
-#body {
+body {
   height: 100%;
-  width: 700px;
-  background-color: gainsboro;
+}
+
+/* 헤더 */
+
+#header {
+  height: 50px;
+  background-color: yellow;
+  color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header > span {
+  background-color: blue;
+}
+
+/* 바디 */
+
+#body {
+  width: 1000px;
+  background-color: green;
+  padding-bottom: 10px;
   margin: 0 auto;
 }
-#footer {
-  height: 100px;
-  background-color: gray;
+#body > h1 {
+  border-bottom: 3px solid black;
 }
+
 #banner {
   height: 200px;
   background-color: brown;
+}
+/* 바디설정끝 */
+
+/* 메인컨텐츠*/
+
+/* --메인 컨텐츠링크 */
+#content1-link {
+  display: flex;
+  background-color: blueviolet;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.content1-name {
+  width: 70px;
+  height: 50px;
+  margin: 5px;
+  background-color: rgb(176, 136, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* --메인컨텐츠 링크 끝 */
+
+/* --서브컨텐츠 링크 */
+#content2-login {
+  width: 250px;
+  height: 150px;
+  margin-top: 5px;
+  display: flex;
+  align-self: center;
+  background-color: blueviolet;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.content2-login {
+  width: 70px;
+  height: 50px;
+  margin: 5px;
+  background-color: rgb(36, 145, 108);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --서브컨텐츠링크 끝 */
+
+/* --컨텐츠 목록 */
+#contentlist {
+  height: 2000px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: yellow;
+  display: flex;
+}
+
+#content1 {
+  width: 700px;
+  background-color: blue;
+  margin-right: 10px;
+}
+
+#content2 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: rgb(157, 157, 241);
+  margin-left: 10px;
+}
+/* --컨텐츠 목록 끝 */
+
+/* --메인컨텐츠 내용 */
+.content1-main {
+  width: 100px;
+  height: 150px;
+  margin: 5px;
+  background-color: greenyellow;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.content1-img {
+  width: 100px;
+}
+.content1-text {
+  display: flex;
+  flex-direction: column;
+}
+.content1-writer {
+  display: flex;
+  align-items: center;
+}
+.content1-title {
+  margin-left: 5px;
+}
+/* --메인컨텐츠 내용끝 */
+
+/* 메인컨텐츠 끝 */
+
+/* 푸터 */
+#footer {
+  height: 50px;
+  background-color: gray;
+}
+/* 푸터끝 */
+
+/* 작가 */
+.writer-img {
+  width: 20px;
+  border-radius: 50%;
+}
+
+.writer-name {
 }
